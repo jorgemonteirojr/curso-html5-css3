@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* exemplos 
+
+        # = id
+        . = class
+        : = pseudoclass
+        :: = pseudo elements
+        > = children , "filho do" no caso */
+
+        body{
+
+            font-family: Arial, Helvetica, sans-serif;    
+        }
+        a {
+            color: black; /* cor do link */
+            text-decoration: none; /* esse serve para tirar os detalhes sublinhados */
+            font-weight: bold; /* link em negrito */
+        }
+
+        a:visited{
+
+            color: darkblue; /* cor dos links ja visitados */
+        }
+
+        a:hover {
+            text-decoration: underline; /* quando passamos o mouse em cima fica sublinhado como um link muito bom esse */
+            color: blueviolet; /* esse comando serve para que quando passamos o mouse em cima do link ele troque de cor por essa que colocamos a cima*/
+        }
+
+        a:active{
+
+            color: darkgreen; /* essa função serve para assim que o link for clickado
+            ele muda de cor instantaneamente no click*/
+        }
+
+        a::after{    /* esse comando serve para adicionar uma palavra a frende de cada link */
+            font-weight:  normal;
+            content: "(Link)";   
+            color: rgba(94, 90, 84, 0.663);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="">GitHub</a></li>
+        <li><a href="">Youtube</a></li>
+        <li><a href="">Curso em video</a></li>
+    </ul>
+    
+</body>
+</html>
