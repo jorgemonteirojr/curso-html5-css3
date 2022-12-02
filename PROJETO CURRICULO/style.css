@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+
+
+
+
+body {
+
+    text-align: center;
+
+    background-color: #5F04D6;
+
+    font-family: Arial, Helvetica, sans-serif;
+  
+    font-size: 20px;
+    
+    color: antiquewhite
+    ;
+}
+
+
+div.info {
+    justify-content: space-between;
+    border-bottom: 10px rgb(6, 6, 5) solid;
+    align-items: center;
+}
+
+.redes ul {
+    display:contents;
+    
+}
+
+.redes ul a {
+
+    padding: 10px;
+    justify-content: center;
+}
