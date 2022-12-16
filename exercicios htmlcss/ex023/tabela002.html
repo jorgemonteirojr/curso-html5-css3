@@ -12,7 +12,15 @@
 
         table{
             width: 500px; 
-            border-collapse: collapse;     
+            border-collapse: collapse;   
+            position: relative;  
+        }
+
+        thead > tr >th{
+
+            position: sticky; /* essa config serve para que quandos rolarmos a tabela a informação do cabeçalho se mova junto com a rolagem fazendo assim a pessoa que está observando não perca oque o conteudo está apresentando, esse comando serve mais para tabelas grandes, quando é pequena não tem muita necessidade.*/
+            top: -1px;
+            background-color: green;
         }
         .populacao{
 
@@ -25,13 +33,17 @@
 
         thead ,tfoot{
 
-            background-color: darkcyan;
+            background-color:green;
             color: antiquewhite;
         }
 
         td.num{
 
             text-align: right;
+        }
+        tbody > tr:nth-child(2n){ /* OQUE ISSO QUER DIZER: QUE A CADA 2 FILHOS DESSA DIV OU CAIXA ELE PINTARA DA COR QUE COLOCOU POSSO USAR A TAG *ODD* DENTRO DAS ASPAS FAZENDO Q CADA NUMERO IMPAR SEJA PINTADO
+            OU EVEN QUE É PAR A CADA NUMERO PAR ELE VAI PINTAR  */
+            background-color: lightgrey;
         }
 
         caption{
