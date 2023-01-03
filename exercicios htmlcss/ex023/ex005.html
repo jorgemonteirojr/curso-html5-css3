@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+      body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        table{
+            width:60%vw;
+            border-collapse: separate;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        col.cnome{
+            background-color: aquamarine;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <h1>exercicio de tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+            
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+            
+        </tr>
+
+        <tr>
+            <td>Jorge</td>
+            <td>F</td>
+            <td>44</td>
+            <td>Mecanico</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
