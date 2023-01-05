@@ -9,9 +9,18 @@
 <body>
     <h1>Testando o uso de Iframes</h1>
     <p>acessando o site do 
+
+        <!-- Normalmente um tamanho padrão de um iframe é de 300px de largura e 150 de altura-->
     
-    <iframe src="https://www.cursoemvideo.com" frameborder="0">
-        <a href="https://www.cursoemvideo.com"> Curso em video</a> <!-- bom isto server se o celular ou navegador da pessoa não for compativel com iframes, dai aparece o link para clickar-->
+    <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" width="500" scrolling="auto"> <!-- isso também pode ser feito nas Css mas também podemos da altura e largura as iframes dessa forma, mas as Css são soberanas então se tiver configuraçõe snas css´s referente a essa iframe, o frame vai pegar a config dela-->
+
+        <!--A config scrolling serve para barra de rolagem ao lado da imagem, temos as tags, no, yes, e auto
+        ou seja sim para barra de rolagem, não, e automatica, certos navegadores não obedecem a yes e no
+    -->
+
+    <!--Para configurar uma borda precisa cer nas css usando border -->
+    
+        <a href="https://www.cursoemvideo.com" target="_blank" > Curso em video</a> <!-- bom isto server se o celular ou navegador da pessoa não for compativel com iframes, dai aparece o link para clickar-->
     </iframe>    
     
     para aprender a programar</p>
